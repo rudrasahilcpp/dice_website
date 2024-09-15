@@ -1,0 +1,60 @@
+#player1 {
+    position: absolute;
+    top: 460px;
+    left: 400px;
+}
+
+#player2 {
+    position: absolute;
+    top: 460px;
+    left: 800px;
+}
+
+#title {
+    position: absolute;
+    top: 5px;
+    left: 550px;
+    font-size: 80px;
+    font-family: cursive;
+    color: aquamarine;
+}
+
+
+#flag_left {
+    position: absolute;
+    top: 5px;
+    left: 410px;
+    font-size: 80px;
+}
+
+#flag_right {
+    position: absolute;
+    top: 5px;
+    right: 350px;
+    font-size: 80px;
+}
+
+#invisible {
+    visibility: hidden;
+}
+
+.nametag {
+    position: absolute;
+    top: 325px;
+    font-size: 60px;
+    font-family: cursive;
+    color: aquamarine;
+}
+#left{
+    position: absolute;
+    left: 440px;
+}
+
+#right{
+    position: absolute;
+    right: 400px;
+}
+
+body {
+    background-color:cadetblue;
+}
