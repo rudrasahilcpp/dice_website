@@ -1,5 +1,6 @@
 var arr = ["./images/dice1.png","./images/dice2.png","./images/dice3.png","./images/dice4.png","./images/dice5.png","./images/dice6.png",]
-dice();
+
+document.querySelector("#mybtn").addEventListener("click",dice);
 function dice(){
     var p1 = Math.ceil(Math.random()*6);
     var p1_index = p1-1;
@@ -7,16 +8,15 @@ function dice(){
     var p2_index = p2-1;
 
     if(p1>p2){
-        document.querySelector("#title").innerHTML = "Player 1 won";
-        document.querySelector("#invisible").setAttribute("id","flag_left");
+        document.querySelector("#title").innerHTML = "🚩Player 1 won";
     }
     else if(p2>p1){
-        document.querySelector("#title").innerHTML = "Player 2 won";
-        document.querySelector("#invisible").setAttribute("id","flag_right");
+        document.querySelector("#title").innerHTML = "Player 2 won🚩";
+        
     }
     else{
-        document.querySelector("#title").innerHTML = "tie game";
-        document.querySelector("#invisible").setAttribute("id","invisible");
+        document.querySelector("#title").innerHTML = "Tie game";
+
     }
 
     document.querySelector("#player1").setAttribute("src",arr[p1_index]);
